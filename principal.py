@@ -9,37 +9,45 @@ st.write("Lista de empleados y su información")
 
 
 # Crear el gerente
-gerente = empleado.Gerente("Carlos López")
+gerente = empleado.Gerente("Carlos López Sarmiento")
 
 # Crear los jefes de área
 jefes = [
-    empleado.JefeDeArea("Ana Pérez", "Marketing", gerente),
-    empleado.JefeDeArea("Juan Gómez", "Sistemas", gerente),
-    empleado.JefeDeArea("Luis Méndez", "Producción", gerente),
-    empleado.JefeDeArea("Marta Rojas", "Logística", gerente),
-    empleado.JefeDeArea("Pedro Ramírez", "Finanzas", gerente)
+    empleado.JefeDeArea("Ana Pérez Gonzales", "Marketing", gerente,),
+    empleado.JefeDeArea("Juan Elver Gómez Chura", "Sistemas", gerente),
+    empleado.JefeDeArea("Luis Méndez Castro", "Producción", gerente),
+    empleado.JefeDeArea("Marta María Rojas Paredes", "Logística", gerente),
+    empleado.JefeDeArea("Pedro Diego Ramírez Vizcarra", "Finanzas", gerente)
 ]
 
 # Crear asistentes (máximo 2 por área)
 asistentes = [
-    empleado.Asistente("María Torres", jefes[0]),
-    empleado.Asistente("Javier Vargas", jefes[0]),
-    empleado.Asistente("Luis Ramírez", jefes[1]),
-    empleado.Asistente("Andrea Soto", jefes[2]),
-    empleado.Asistente("Elena Ortiz", jefes[3]),
+    empleado.Asistente("María Josefina Torres Mamani", jefes[0]),
+    empleado.Asistente("Javier Pedro Vargas Mustinso", jefes[0], "R(Renuncia)"),
+    empleado.Asistente("Luis Ramírez Cueva", jefes[1]),
+    empleado.Asistente("Andrea Soto Aguilar", jefes[2]),
+    empleado.Asistente("Elena Ortiz Rivera", jefes[3]),
+    empleado.Asistente("Pedro Quiñones Bautizan", jefes[1], "TC (Término de Contrato)"),
+    empleado.Asistente("Ronaldo Sergio Lopez Rivera", jefes[4])
 ]
 
 # Crear técnicos (mínimo 3, máximo 5 por área)
 tecnicos = [
-    empleado.Tecnico("Pedro Castillo", jefes[0], 3),
-    empleado.Tecnico("Javier Díaz", jefes[0], 5),
-    empleado.Tecnico("Fernando Sánchez", jefes[1], 2),
-    empleado.Tecnico("Hugo Paredes", jefes[1], 4),
-    empleado.Tecnico("Erick Pérez", jefes[1], 1),
-    empleado.Tecnico("Rosa Medina", jefes[2], 3),
-    empleado.Tecnico("Daniel Suárez", jefes[3], 5),
-    empleado.Tecnico("Gabriel Fuentes", jefes[4], 2),
-    empleado.Tecnico("Cristina Vargas", jefes[4], 4)
+    empleado.Tecnico("Pedro Castillo Segarra", jefes[0], 3),
+    empleado.Tecnico("Javier Díaz Paredes", jefes[0], 5),
+    empleado.Tecnico("Fernando Sánchez Sánchez", jefes[1], 2),
+    empleado.Tecnico("Edson Flores Sanchez", jefes[4], 2),
+    empleado.Tecnico("Hugo Paredes Crisanto", jefes[1], 4),
+    empleado.Tecnico("Erick Pérez Domingo", jefes[1], 1),
+    empleado.Tecnico("Rosa Medina Huallpa", jefes[2], 3),
+    empleado.Tecnico("Daniel Suárez Ortiz", jefes[3], 5),
+    empleado.Tecnico("Gabriel Fuentes Cavero", jefes[4], 2),
+    empleado.Tecnico("Soledad Aquitania Polo", jefes[0], 2),
+    empleado.Tecnico("Regina Lopez Albujar", jefes[2], 3),
+    empleado.Tecnico("Rigoberto Bustinsa Selva", jefes[3], 5),
+    empleado.Tecnico("Hernan Robles Crisanto", jefes[3], 4),
+    empleado.Tecnico("Ericka Apaza Domingo", jefes[2], 1),
+    empleado.Tecnico("Cristina Vargas Sipan", jefes[4], 4)
 ]
 
 # Unir todos los empleados en una lista
